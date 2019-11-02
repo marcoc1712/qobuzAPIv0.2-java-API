@@ -27,7 +27,7 @@ import java.net.URL;
  *
  * @author marco
  */
-public interface Label  extends QobuzObject {
+public interface Label {
 
 	String ALBUMS = "albums";
 	String ALBUM_COUNT = "albums_count";

@@ -23,7 +23,7 @@ package com.mc2.qobuz.api.v02.API.elements;
  *
  * @author marco
  */
-public interface Promotion  extends QobuzObject {
+public interface Promotion {
 
 	String ID = "id";
 	String ORIGINAL_PRICE = "original_price";

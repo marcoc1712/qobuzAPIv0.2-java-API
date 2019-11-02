@@ -24,7 +24,7 @@ package com.mc2.qobuz.api.v02.API.elements;
  *
  * @author marco
  */
-public interface Article  extends QobuzObject{
+public interface Article {
 
 	String CURRENCY = "currency";
 	String DESCRIPTION = "description";

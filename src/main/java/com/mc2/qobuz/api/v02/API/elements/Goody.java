@@ -25,7 +25,7 @@ import java.net.URL;
  *
  * @author marco
  */
-public interface Goody  extends QobuzObject {
+public interface Goody {
 
 	String DESCRIPTION = "description";
 	String FILE_FORMAT_ID = "file_format_id";

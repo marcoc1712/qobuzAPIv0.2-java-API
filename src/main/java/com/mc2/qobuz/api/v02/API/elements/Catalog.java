@@ -27,7 +27,7 @@ import com.mc2.qobuz.api.v02.API.lists.TrackList;
  *
  * @author marco
  */
-public interface Catalog extends QobuzObject {
+public interface Catalog {
 
 	String ALBUMS = "albums";
 	String ARTICLES = "articles";

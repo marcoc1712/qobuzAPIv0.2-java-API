@@ -23,7 +23,7 @@ package com.mc2.qobuz.api.v02.API.elements;
  *
  * @author marco
  */
-public interface Period  extends QobuzObject {
+public interface Period {
 
 	String ID = "id";
 	String NAME = "name";

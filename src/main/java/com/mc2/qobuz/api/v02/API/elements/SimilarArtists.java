@@ -19,23 +19,19 @@
  */
 package com.mc2.qobuz.api.v02.API.elements;
 
+import com.mc2.qobuz.api.v02.API.lists.ArtistList;
+
 /**
  *
  * @author marco
  */
-public interface Instrument {
+public interface SimilarArtists {
 
-	String ID = "id";
-	String NAME = "name";
-
-	/**
-	 * @return the id
-	 */
-	Long getId();
+	String ARTISTS = "artists";
 
 	/**
-	 * @return the name
+	 * @return the store
 	 */
-	String getName();
+	ArtistList getArtists();
 	
 }

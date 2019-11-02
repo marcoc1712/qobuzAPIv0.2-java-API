@@ -23,7 +23,7 @@ package com.mc2.qobuz.api.v02.API.elements;
  *
  * @author marco
  */
-public interface Collection extends QobuzObject {
+public interface Collection {
 
 	String ID = "id";
 	String NAME = "name";

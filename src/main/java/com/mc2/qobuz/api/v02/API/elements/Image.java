@@ -25,8 +25,9 @@ import java.net.URL;
  *
  * @author marco
  */
-public interface Image  extends QobuzObject {
-
+public interface Image {
+	
+	String THUMBNAIL = "thumbnail"; //50px
 	String BACK = "back";
 	String EXTRALARGE = "extralarge";
 	String LARGE = "large"; //600p

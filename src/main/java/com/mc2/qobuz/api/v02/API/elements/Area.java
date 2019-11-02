@@ -23,7 +23,7 @@ package com.mc2.qobuz.api.v02.API.elements;
  *
  * @author marco
  */
-public interface Area  extends QobuzObject{
+public interface Area {
 
 	String ID = "id";
 	String NAME = "name";
@@ -37,5 +37,5 @@ public interface Area  extends QobuzObject{
 	 * @return the name
 	 */
 	String getName();
-	
+
 }

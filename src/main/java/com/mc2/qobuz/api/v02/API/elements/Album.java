@@ -27,68 +27,67 @@ import java.util.ArrayList;
  *
  * @author marco
  */
-public interface Album extends QobuzObject{
+public interface Album {
 
-	String AREA = "area"; //no
-	String ARTICLES = "articles"; //no
+	String AREA = "area";
+	String ARTICLES = "articles";
 	String ARTICLE_IDS = "article_ids"; //no
 	String ARTIST = "artist";
 	String AWARDS = "awards";
-	String CATCHLINE = "catchline"; //no
-	String COLLECTION = "collection"; //no
+	String CATCHLINE = "catchline";
+	String COLLECTION = "collection";
 	String COMPOSER = "composer";
-	String CONTENT = "content"; //no
+	String CONTENT = "content";
 	String COPYRIGHT = "copyright";
-	String CREATED_AT = "created_at"; //no
-	String DESCRIPTION = "description"; //no
-	String DISPLAYABLE = "displayable"; //no
-	String DOWNLOADABLE = "downloadable"; //no
-	String DURATION = "duration"; //no
+	String CREATED_AT = "created_at";
+	String DESCRIPTION = "description";
+	String DISPLAYABLE = "displayable";
+	String DOWNLOADABLE = "downloadable";
+	String DURATION = "duration";
 	String GENRE = "genre";
-	String GENRES_LIST = "genres_list"; //no
-	String GOODIES = "goodies"; //no
-	String HIRES = "hires"; //no
-	String HIRES_STREAMABLE = "hires_streamable"; //no
-	String ID = "id"; //no
-	String IMAGE = "image"; //no
+	String GENRES_LIST = "genres_list";
+	String GOODIES = "goodies";
+	String HIRES = "hires";
+	String HIRES_STREAMABLE = "hires_streamable";
+	String ID = "id";
+	String IMAGE = "image";
 	String INSTRUMENT = "instrument";
 	String LABEL = "label";
-	String MAXIMUM_BIT_DEPTH = "maximum_bit_depth"; //no
-	String MAXIMUM_CHANNEL_COUNT = "maximum_channel_count"; //no
-	String MAXIMUM_SAMPLING_RATE = "maximum_sampling_rate"; //no
-	String MAXIMUM_TECHNICAL_SPECIFICATIONS = "maximum_technical_specifications"; //no
-	String MEDIA_COUNT = "media_count"; //no
-	/* 9/9/19 */
-	String PARENTAL_WARNING = "parental_warning"; //no
+	String MAXIMUM_BIT_DEPTH = "maximum_bit_depth";
+	String MAXIMUM_CHANNEL_COUNT = "maximum_channel_count";
+	String MAXIMUM_SAMPLING_RATE = "maximum_sampling_rate";
+	String MAXIMUM_TECHNICAL_SPECIFICATIONS = "maximum_technical_specifications";
+	String MEDIA_COUNT = "media_count";
+	String PARENTAL_WARNING = "parental_warning";
 	String PERIOD = "period";
-	String POPULARITY = "popularity"; //no
-	String PREVIEWABLE = "previewable"; //no
+	String POPULARITY = "popularity";
+	String PREVIEWABLE = "previewable";
 	String PRODUCT_SALES_FACTORS_MONTHLY = "product_sales_factors_monthly"; //no
 	String PRODUCT_SALES_FACTORS_WEEKLY = "product_sales_factors_weekly"; //no
 	String PRODUCT_SALES_FACTORS_YEARLY = "product_sales_factors_yearly"; //no
-	String PRODUCT_TYPE = "product_type"; //no
-	String PRODUCT_URL = "product_url"; //no
-	String PROGRAM = "program"; //no
-	String PURCHASABLE = "purchasable"; //no
-	String PURCHASABLE_AT = "purchasable_at"; //no
-	String QOBUZ_ID = "qobuz_id"; //no
-	String RECORDING_INFORMATION = "recording_information"; //no
-	String RELATIVE_URL = "relative_url"; //no
-	String RELEASED_AT = "released_at"; //no
-	String RELEASE_DATE_DOWNLOAD = "release_date_download"; //no
-	String RELEASE_DATE_ORIGINAL = "release_date_original"; //no
-	String RELEASE_DATE_STREAM = "release_date_stream"; //no
-	String SAMPLEABLE = "sampleable"; //no
-	String SLUG = "slug"; //no
-	String STORE_RELATED = "store_related"; //no
-	String STREAMABLE = "streamable"; //no
-	String STREAMABLE_AT = "streamable_at"; //no
-	String SUBTITLE = "subtitle"; //no
+	String PRODUCT_TYPE = "product_type";
+	String PRODUCT_URL = "product_url";
+	String PROGRAM = "program";
+	String PURCHASABLE = "purchasable";
+	String PURCHASABLE_AT = "purchasable_at";
+	String QOBUZ_ID = "qobuz_id";
+	String RECORDING_INFORMATION = "recording_information";
+	String RELATIVE_URL = "relative_url";
+	String RELEASED_AT = "released_at";
+	String RELEASE_DATE_DOWNLOAD = "release_date_download";
+	String RELEASE_DATE_ORIGINAL = "release_date_original";
+	String RELEASE_DATE_STREAM = "release_date_stream";
+	String SAMPLEABLE = "sampleable";
+	String SLUG = "slug";
+	String STORE_RELATED = "store_related";
+	String STREAMABLE = "streamable";
+	String STREAMABLE_AT = "streamable_at";
+	String SUBTITLE = "subtitle";
 	String TITLE = "title";
-	String TRACKS = "tracks"; //no
-	String TRACKSCOUNT = "tracks_count"; //no  TRACK_TOTAL
+	String TRACKS = "tracks";
+	String TRACKSCOUNT = "tracks_count";
 	String UPC = "upc";
-	String URL = "url"; //no
+	String URL = "url";
 
 	boolean isTracklistComplete();
 	
@@ -102,7 +101,7 @@ public interface Album extends QobuzObject{
 	/**
 	 * @return the articles
 	 */
-	ArrayList<Article> getArticles();
+	ArrayList<? extends Article> getArticles();
 
 	/**
 	 * @return the artist
@@ -373,7 +372,7 @@ public interface Album extends QobuzObject{
 	/**
 	 * @return the tracks
 	 */
-	TrackList getTracks();
+	TrackList getTrackList();
 
 	/**
 	 * @return the tracks_count
@@ -390,6 +389,9 @@ public interface Album extends QobuzObject{
 	 */
 	String getUrl();
 
-	
-	
+	/**
+	 * @return the rawKeyValuePair
+	 
+	Map<String, String> getRawKeyValuePair();
+	*/
 }

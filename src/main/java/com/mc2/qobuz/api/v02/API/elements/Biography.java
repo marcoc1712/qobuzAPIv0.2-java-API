@@ -23,7 +23,7 @@ package com.mc2.qobuz.api.v02.API.elements;
  *
  * @author marco
  */
-public interface Biography extends QobuzObject {
+public interface Biography {
 
 	String CONTENT = "content";
 	String SUMMARY = "summary";

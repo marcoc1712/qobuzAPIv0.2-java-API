@@ -30,7 +30,7 @@ import java.util.List;
  *
  * @author marco
  */
-public interface Artist  extends QobuzObject{
+public interface Artist {
 
 	String ALBUMS = "albums";
 	String ALBUM_AS_PRIMARY_ARTIST_COUNT = "albums_as_primary_artist_count";

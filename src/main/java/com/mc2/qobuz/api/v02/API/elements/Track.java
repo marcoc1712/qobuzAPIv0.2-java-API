@@ -26,7 +26,7 @@ import java.util.Map;
  *
  * @author marco
  */
-public interface Track  extends QobuzObject {
+public interface Track {
 
 	String ALBUM = "album";
 	String ARTICLES = "articles"; //no

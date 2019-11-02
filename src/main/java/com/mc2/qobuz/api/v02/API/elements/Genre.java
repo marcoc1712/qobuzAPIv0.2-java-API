@@ -27,7 +27,7 @@ import java.util.ArrayList;
  *
  * @author marco
  */
-public interface Genre  extends QobuzObject {
+public interface Genre {
 
 	String ALBUMS = "albums";
 	String COLOR = "color";

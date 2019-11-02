@@ -19,17 +19,20 @@
  */
 package com.mc2.qobuz.api.v02.API.elements;
 
-import java.util.Map;
+import com.mc2.qobuz.api.v02.API.lists.AlbumList;
+
 
 /**
  *
  * @author marco
  */
-public interface QobuzObject {
+public interface FeaturedAlbums {
+
+	String ALBUMS = "albums";
 
 	/**
-	 * @return the rawKeyValuePair
+	 * @return the store
 	 */
-	Map<String, String> getRawKeyValuePair();
+	AlbumList getAlbums();
 	
 }

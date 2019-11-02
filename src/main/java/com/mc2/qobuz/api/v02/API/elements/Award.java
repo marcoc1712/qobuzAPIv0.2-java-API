@@ -23,7 +23,7 @@ package com.mc2.qobuz.api.v02.API.elements;
  *
  * @author marco
  */
-public interface Award extends QobuzObject {
+public interface Award {
 
 	String AWARDED_AT = "awarded_at";
 	String AWARD_ID = "award_id";
