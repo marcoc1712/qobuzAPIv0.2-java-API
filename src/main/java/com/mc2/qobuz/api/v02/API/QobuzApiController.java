@@ -11,6 +11,7 @@ import com.mc2.qobuz.api.v02.API.elements.Catalog;
 import com.mc2.qobuz.api.v02.API.elements.FeaturedAlbums;
 import com.mc2.qobuz.api.v02.API.elements.SimilarArtists;
 import com.mc2.qobuz.api.v02.API.elements.Track;
+import com.mc2.qobuz.api.v02.API.elements.UserAuth;
 import com.mc2.qobuz.api.v02.API.lists.GenreList;
 
 /**
@@ -47,6 +48,13 @@ public interface QobuzApiController {
                                             
                                             
     };
+	
+	
+	void setQobuzAuth(QobuzAuth auth) throws QobuzAPIException;
+	
+	QobuzAuth getQobuzAuth() throws QobuzAPIException;
+	
+	UserAuth getUserAuth() throws QobuzAPIException;
 	
 	Catalog getCatalog(String query, long offset, long limit) throws QobuzAPIException ;
 	
