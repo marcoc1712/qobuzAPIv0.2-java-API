@@ -27,6 +27,11 @@ public interface Biography {
 
 	String CONTENT = "content";
 	String SUMMARY = "summary";
+	
+	/* 18/08/2020 */
+	
+	String LANGUAGE = "language";
+	String SOURCE = "source";
 
 	/**
 	 * @return the content
@@ -37,5 +42,14 @@ public interface Biography {
 	 * @return the summary
 	 */
 	String getSummary();
-	
+
+	/**
+	 * @return the language
+	 */
+	String getLanguage();
+
+	/**
+	 * @return the source
+	 */
+	String getSource();
 }

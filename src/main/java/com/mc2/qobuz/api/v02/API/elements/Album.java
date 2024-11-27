@@ -88,6 +88,11 @@ public interface Album {
 	String TRACKSCOUNT = "tracks_count";
 	String UPC = "upc";
 	String URL = "url";
+	
+	/*18-08-2020 */
+	String VERSION = "version";
+	String RELEASE_TYPE ="release_type";
+	String RELEASE_TAGS ="release_tags";
 
 	boolean isTracklistComplete();
 	
@@ -388,7 +393,23 @@ public interface Album {
 	 * @return the url
 	 */
 	String getUrl();
+	
+	/**
+	 * @return the version
+	 */
+	String getVersion();
 
+	/**
+	 * @return the release type
+	 */
+	String getReleaseType();
+	
+	/**
+	 * @return the release tags
+	 */
+	ArrayList<String> getReleaseTags();
+	
+	
 	/**
 	 * @return the rawKeyValuePair
 	 

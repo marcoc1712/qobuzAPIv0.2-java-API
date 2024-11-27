@@ -153,21 +153,32 @@ public class QobuzUtils {
 	}
 	public static String getGenresFromGenreList(ArrayList<String> genreList){
 		
-		String out="";
-		if (genreList == null || genreList.isEmpty()){return out;}
+		return getStringFromArrayList(genreList);
+	}
+	
+	public static String getStringFromArrayList(ArrayList<String> list){
 		
-		for (String step  : genreList){
+		String out="";
+		if (list == null || list.isEmpty()){return out;}
+		
+		for (String step  : list){
 			if (!out.isEmpty()){out=out+SEPARATOR;}
 			out = out+step;
 		}
 		return out;
 	}
+	
 	public static ArrayList<String> getGenreListFromGenres(String genres){
 		
-		ArrayList<String>  out= new ArrayList<>();
-		if (genres == null || genres.isEmpty()){return out;}
+		return getArrayLIstFromString(genres);
+	}
+	
+	public static ArrayList<String> getArrayLIstFromString(String in){
 		
-		String[] strArray = genres.split(SEPARATOR);
+		ArrayList<String>  out= new ArrayList<>();
+		if (in == null || in.isEmpty()){return out;}
+		
+		String[] strArray = in.split(SEPARATOR);
 		for (String step  : strArray){
 			out.add(step);
 		}

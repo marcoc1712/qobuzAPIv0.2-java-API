@@ -48,8 +48,7 @@ public interface QobuzApiController {
                                             
                                             
     };
-	
-	
+
 	void setQobuzAuth(QobuzAuth auth) throws QobuzAPIException;
 	
 	QobuzAuth getQobuzAuth() throws QobuzAPIException;
